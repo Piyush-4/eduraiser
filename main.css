@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: rgb(51, 45, 45);
+    
+}
+.header .brand {
+    color: ivory;
+    font-size: 3.5rem;
+    padding: 0.5rem 2.75rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    text-decoration: none;
+}
+.contact {
+    font-size: 1.2rem;
+    color: ivory;
+    text-decoration: none;
+   margin: 2.25rem 2.7rem 2.25rem 57.95rem;
+    font-family: 'Caveat', cursive;
+}
+.brand:hover {
+    color:#bb356a;
+}
+.contact:hover{
+    color: #bb356a;
+}
+.head {
+    background: rgb(240, 236, 236);
+}
+
+.top-thought {
+    color: rgb(51, 45, 45);
+    
+    padding: 11.4rem 3.5rem;
+}
+.top-thought h2 {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 3rem;
+
+}
+.head img{
+    width: 45%;
+    height: auto;
+    float: right;
+    margin: 1.375rem 2.75rem;
+}
+.header {
+    background: rgb(51, 45, 45);
+    margin: 0;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+.container {
+    position: relative;
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background:  rgb(240, 236, 236);
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: 0.5s;
+}
+.container:hover .card {
+    filter: blur(3px);
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+.container .card:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.container .card .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#db1162, #000000 );
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.container .card .circle h2 {
+    color: rgb(240, 236, 236);
+    font-size: 3.5em;
+    padding: 50px 0;
+}
+.container .card .content {
+    position: absolute;
+    bottom: 10px;
+    padding:  20px;
+    text-align: center;
+}
+.container .card .content p {
+    color: rgb(49, 43, 49);
+    padding: 0 10px 10px;
+    font-size: 1.2em;
+}
+.container .card .content a {
+color:rgb(240, 236, 236) ;
+font-family: 'Akaya Kanadaka', cursive;
+font-size: 1.3em;
+position: relative;
+display: inline-block;
+letter-spacing: 1px;
+padding: 10px 20px;
+background: linear-gradient(#db1162, #522424 );
+border-radius: 40px;
+text-decoration: none;
+margin-top: 20px;
+}
+
+.container .card .content a:hover {
+    background: linear-gradient(#3b0505 , #db1162); 
+    transform: scale(1.1); 
+    
+}
+footer {
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: black;
+    color: rgb(240, 232, 231);
+    padding: 1rem 0;
+    opacity: 0.6;
+}
+.heart {
+    color: rgb(153, 66, 66);
+}
