@@ -141,7 +141,7 @@ body {
 .container .card .content a {
 color:rgb(240, 236, 236) ;
 font-family: 'Akaya Kanadaka', cursive;
-font-size: 1.3em;
+font-size: 1em;
 position: relative;
 display: inline-block;
 letter-spacing: 1px;
@@ -150,6 +150,7 @@ background: linear-gradient(#bb356a, #91091e );
 border-radius: 40px;
 text-decoration: none;
 margin-top: 20px;
+opacity: 0.9;
 }
 
 .container .card .content a:hover {
