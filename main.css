@@ -135,7 +135,7 @@ body {
 }
 .container .card .content p {
     color: rgb(49, 43, 49);
-    padding: 0 10px 10px;
+    padding: 10px;
     font-size: 1.2em;
 }
 .container .card .content a {
