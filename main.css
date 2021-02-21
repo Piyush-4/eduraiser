@@ -138,6 +138,11 @@ body {
     padding: 10px;
     font-size: 1.2em;
 }
+@media screen and (max-width: 400px) {
+    .container .card .content p {
+        padding-top: 15px;
+    }
+}
 .container .card .content a {
 color:rgb(240, 236, 236) ;
 font-family: 'Akaya Kanadaka', cursive;
