@@ -26,8 +26,7 @@ background: linear-gradient(#bb356a, #91091e );
 border-radius: 40px;
 text-decoration: none;
 margin-left: 25%;
-opacity: 0.9;
-
+opacity: 0.8;
 }
 .card .button_sol a:hover{
     background: linear-gradient(#91091e , #bb356a); 
