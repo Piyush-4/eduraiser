@@ -140,7 +140,7 @@ body {
 }
 @media screen and (max-width: 400px) {
     .container .card .content p {
-        padding-top: 15px;
+        padding-top: 20px;
     }
 }
 .container .card .content a {
