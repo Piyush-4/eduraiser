@@ -117,7 +117,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#f14668, #000000 );
+    background: linear-gradient(#da723c, #000000 );
     clip-path: circle(180px at center 0);
     text-align: center;
 }
@@ -146,14 +146,14 @@ position: relative;
 display: inline-block;
 letter-spacing: 1px;
 padding: 10px 20px;
-background: linear-gradient(#f14668, #2d5224 );
+background: linear-gradient(#da723c, #91091e );
 border-radius: 40px;
 text-decoration: none;
 margin-top: 20px;
 }
 
 .container .card .content a:hover {
-    background: linear-gradient(#093b05 , #f14668); 
+    background: linear-gradient(#91091e , #da723c); 
     transform: scale(1.1); 
     
 }
