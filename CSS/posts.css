@@ -12,7 +12,7 @@
     padding: 1.1rem;
 }
 .question{
-    margin-left:12rem;
+    margin-left:8rem;
 }
 .que{
     color: rgba(27, 27, 27, 0.837);
@@ -24,7 +24,7 @@
     font-family: 'Akaya Telivigala', cursive;
     letter-spacing: 0.0625rem;
     float: left;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .c_code{
     background-color: #1e1e1e;
@@ -40,10 +40,13 @@
         margin:auto;
         border-radius: 0;
     }
-    .problem, .que{
-        font-size: 1px;
+    .problem{
+        font-size: 1rem;
+    }
+    .que{
+        font-size: 1.5rem;
     }
     .question{
-        margin-left: 8rem;
+        margin-left: 4rem;
     }
 }
