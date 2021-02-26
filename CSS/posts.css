@@ -45,10 +45,37 @@ ul{
     padding: 0.5rem 1.5rem;
     white-space:pre-line;
 }
+code, samp{
+    color: rgba(255, 255, 255, 0.823);
+}
+.inc{
+    color: rgb(171, 109, 230);
+}
+.h_file{
+    color: rgb(209, 41, 41);
+}
+.data_t{
+    color: rgb(82, 82, 223);
+}
+.fun{
+    color: blanchedalmond;
+}
+.str{
+    color: rgba(255, 0, 0, 0.775);
+}
+.return{
+    color: rgb(188, 140, 233);
+}
+.space_1{
+    margin-left: 2rem;
+}
+.c_comment{
+    color: rgba(255, 235, 205, 0.72);
+}
 @media only screen and (max-width: 600px) {
     .post{
         width:95%;
-        margin:auto;
+        margin: 0.5rem auto;
         border-radius: 0;
         padding: 0.3rem;
     }
