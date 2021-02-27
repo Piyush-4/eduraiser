@@ -45,7 +45,7 @@ ul{
     padding: 0.5rem 1.5rem;
     white-space:pre-line;
 }
-code, samp{
+code, samp, .ope{
     color: rgba(255, 255, 255, 0.823);
 }
 .inc{
@@ -71,6 +71,9 @@ code, samp{
 }
 .c_comment{
     color: rgba(255, 235, 205, 0.72);
+}
+.var{
+    color: rgb(72, 199, 221);
 }
 @media only screen and (max-width: 600px) {
     .post{
