@@ -36,9 +36,11 @@
 
             <h2 class="problem">Problem:- </h2>
             <div class="question">
-                <h1 class="que">Write a program in C to find area of a triangle, the height and base of the triangle is
-                    entered by
-                    the user.</h1>
+                <h1 class="que">If the marks obtained by a student in five different subjects are input through the
+                    keyboard,
+                    write a program in C to find out the aggregate marks and percentage marks obtained by the
+                    student. Assume that the maximum marks that can be obtained by a student in each subject is 100.
+                </h1>
             </div>
             <div class="pre_k">
                 <p>To understand this program, you should be familiar with the following C programming topics:</p>
@@ -50,28 +52,33 @@
                 </ul>
             </div>
 
-            <h3 class="code_h">The program to find area of the triangle.</h3>
+            <h3 class="code_h">The program to find aggregate marks and percentage marks.</h3>
 
             <pre class="c_code">
                     <code>
                         <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
                         <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
-                        <span class="space_1 data_t">int <span class="var">height<span class="ope">, </span>base</span></span>;
-                        <span class="space_1 data_t">float <span class="var">area</span></span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the height and base of the triangle:- "</span>);
-                        <span class="space_1 fun">scanf</span>( <span class="str">"%d %d"</span>, &<span class="var">height</span>, &<span class="var">base</span>);
-                        <span class="space_1 c_comment">//Calculating area of the triangle</span>
-                        <span class="space_1 var">area</span> = <span class="var">0.5</span>*<span class="var">height</span>*<span class="var">base</span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Area of the triangle = %f"</span>, <span class="var">area</span>);
+                        <span class="space_1 data_t">int </span><span class="var">m1</span>, <span class="var">m2</span>, <span class="var">m3</span>, <span class="var">m4</span>, <span class="var">m5</span>, <span class="var">aggr</span>;
+                        <span class="space_1 data_t">float <span class="var">per</span></span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter marks in 5 subjects: "</span>);
+                        <span class="space_1 fun">scanf</span>( <span class="str">"%d %d %d %d %d"</span>, &<span class="var">m1</span>, &<span class="var">m2</span>, &<span class="var">m3</span>, &<span class="var">m4</span>, &<span class="var">m5</span>);
+                        <span class="space_1 c_comment">//Calculating aggregate & percentage marks</span>
+                        <span class="space_1 var">aggr</span> = <span class="var">m1</span> + <span class="var">m2</span> + <span class="var">m3</span> + <span class="var">m4</span> + <span class="var">m5</span>;
+                        <span class="space_1 var">per</span> = <span class="var">aggr</span> / <span class="var">5</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Aggregate Marks = %d \nPercentage Marks = %f"</span>, <span class="var">aggr</span>, <span class="var">per</span>);
                         <span class="return">return</span> <span>0</span>;
                         }
                     </code>
                 </pre>
             <h3 class="code_h">Output</h3>
             <pre class="c_code">
-                    <samp>Enter the height and base of the triangle:- 3
-                        5
-                        Area of the triangle = 7.500000</samp>
+                    <samp>Enter marks in 5 subjects: 67
+                        89
+                        87
+                        47
+                        93
+                        Aggregate Marks = 383
+                        Percentage Marks = 76.000000</samp>
                 </pre>
         </div>
         <footer>

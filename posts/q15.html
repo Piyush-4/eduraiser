@@ -36,9 +36,9 @@
 
             <h2 class="problem">Problem:- </h2>
             <div class="question">
-                <h1 class="que">Write a program in C to find area of a triangle, the height and base of the triangle is
-                    entered by
-                    the user.</h1>
+                <h1 class="que">Write a program in C to find the compound interest for the principal amount, rate and
+                    time
+                    interval.</h1>
             </div>
             <div class="pre_k">
                 <p>To understand this program, you should be familiar with the following C programming topics:</p>
@@ -50,28 +50,29 @@
                 </ul>
             </div>
 
-            <h3 class="code_h">The program to find area of the triangle.</h3>
+            <h3 class="code_h">The program to find compound interest.</h3>
 
             <pre class="c_code">
                     <code>
                         <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;math.h&gt;</span></span>
                         <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
-                        <span class="space_1 data_t">int <span class="var">height<span class="ope">, </span>base</span></span>;
-                        <span class="space_1 data_t">float <span class="var">area</span></span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the height and base of the triangle:- "</span>);
-                        <span class="space_1 fun">scanf</span>( <span class="str">"%d %d"</span>, &<span class="var">height</span>, &<span class="var">base</span>);
-                        <span class="space_1 c_comment">//Calculating area of the triangle</span>
-                        <span class="space_1 var">area</span> = <span class="var">0.5</span>*<span class="var">height</span>*<span class="var">base</span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Area of the triangle = %f"</span>, <span class="var">area</span>);
+                        <span class="space_1 data_t">float <span class="var">prin<span class="ope">, </span>rate</span><span class="ope">,</span> <span class="var">time<span class="ope">, </span>ci</span></span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter principal amount, rate of interest and time:- "</span>);
+                        <span class="space_1 fun">scanf</span>( <span class="str">"%f %f %f"</span>, &<span class="var">prin</span>, &<span class="var">rate</span>, &<span class="var">time</span>);
+                        <span class="space_1 c_comment">//Calculating compound interest</span>
+                        <span class="space_1 var">ci</span> = <span class="var">prin</span>*<span class="fun">pow(<span class="var">1</span><span class="ope">+</span><span class="var">rate</span><span class="ope">/</span><span class="var">100</span><span class="ope">,</span> <span class="var">time</span>)</span>-<span class="var">prin</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"The compound interest is %f"</span>, <span class="var">ci</span>);
                         <span class="return">return</span> <span>0</span>;
                         }
                     </code>
                 </pre>
             <h3 class="code_h">Output</h3>
             <pre class="c_code">
-                    <samp>Enter the height and base of the triangle:- 3
-                        5
-                        Area of the triangle = 7.500000</samp>
+                    <samp>Enter principal amount, rate of interest and time:- 5000
+                        4
+                        3
+                        The compound interest is 624.320007</samp>
                 </pre>
         </div>
         <footer>

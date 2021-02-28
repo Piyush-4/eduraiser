@@ -36,9 +36,9 @@
 
             <h2 class="problem">Problem:- </h2>
             <div class="question">
-                <h1 class="que">Write a program in C to find area of a triangle, the height and base of the triangle is
-                    entered by
-                    the user.</h1>
+                <h1 class="que">If a five-digit number is input through the keyboard, write a program to calculate the
+                    sum of
+                    its digits.</h1>
             </div>
             <div class="pre_k">
                 <p>To understand this program, you should be familiar with the following C programming topics:</p>
@@ -50,28 +50,36 @@
                 </ul>
             </div>
 
-            <h3 class="code_h">The program to find area of the triangle.</h3>
+            <h3 class="code_h">The program to find the sum of digits of a five digit number.</h3>
 
             <pre class="c_code">
                     <code>
                         <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
                         <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
-                        <span class="space_1 data_t">int <span class="var">height<span class="ope">, </span>base</span></span>;
-                        <span class="space_1 data_t">float <span class="var">area</span></span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the height and base of the triangle:- "</span>);
-                        <span class="space_1 fun">scanf</span>( <span class="str">"%d %d"</span>, &<span class="var">height</span>, &<span class="var">base</span>);
-                        <span class="space_1 c_comment">//Calculating area of the triangle</span>
-                        <span class="space_1 var">area</span> = <span class="var">0.5</span>*<span class="var">height</span>*<span class="var">base</span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Area of the triangle = %f"</span>, <span class="var">area</span>);
+                        <span class="space_1 data_t">int</span> <span class="var">sum<span class="ope">,</span> d1<span class="ope">,</span> d2<span class="ope">,</span> d3<span class="ope">,</span> d4<span class="ope">,</span> d5</span>;
+                        <span class="space_1 data_t">long int</span> <span class="var">num</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter a five digit number:- "</span>);
+                        <span class="space_1 fun">scanf</span>( <span class="str">"%ld"</span>, &<span class="var">num</span>);
+                        <span class="space_1 c_comment">//Calculating sum of digits</span>
+                        <span class="space_1 var">d5</span> = <span class="var">num</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num</span> = <span class="var">num</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d4</span> = <span class="var">num</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num</span> = <span class="var">num</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d3</span> = <span class="var">num</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num</span> = <span class="var">num</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d2</span> = <span class="var">num</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num</span> = <span class="var">num</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d1</span> = <span class="var">num</span> % <span class="var">10</span>;
+                        <span class="space_1 var">sum</span> = <span class="var">d5</span> + <span class="var">d4</span> + <span class="var">d3</span> + <span class="var">d2</span> + <span class="var">d1</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"The sum of digits of the number entered is %d"</span>, <span class="var">sum</span>);
                         <span class="return">return</span> <span>0</span>;
                         }
                     </code>
                 </pre>
             <h3 class="code_h">Output</h3>
             <pre class="c_code">
-                    <samp>Enter the height and base of the triangle:- 3
-                        5
-                        Area of the triangle = 7.500000</samp>
+                    <samp>Enter a five digit number:- 54381
+                        The sum of digits of the number entered is 21</samp>
                 </pre>
         </div>
         <footer>

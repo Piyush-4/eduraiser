@@ -36,9 +36,8 @@
 
             <h2 class="problem">Problem:- </h2>
             <div class="question">
-                <h1 class="que">Write a program in C to find area of a triangle, the height and base of the triangle is
-                    entered by
-                    the user.</h1>
+                <h1 class="que">If lengths of three sides of a triangle are input through the keyboard, write a program
+                    to find the area of the triangle.</h1>
             </div>
             <div class="pre_k">
                 <p>To understand this program, you should be familiar with the following C programming topics:</p>
@@ -50,28 +49,30 @@
                 </ul>
             </div>
 
-            <h3 class="code_h">The program to find area of the triangle.</h3>
+            <h3 class="code_h">The program to find the area of the triangle.</h3>
 
             <pre class="c_code">
                     <code>
                         <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;math.h&gt;</span></span>
                         <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
-                        <span class="space_1 data_t">int <span class="var">height<span class="ope">, </span>base</span></span>;
-                        <span class="space_1 data_t">float <span class="var">area</span></span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the height and base of the triangle:- "</span>);
-                        <span class="space_1 fun">scanf</span>( <span class="str">"%d %d"</span>, &<span class="var">height</span>, &<span class="var">base</span>);
+                        <span class="space_1 data_t">float <span class="var">a<span class="ope">, </span>b</span><span class="ope">,</span> <span class="var">c<span class="ope">, </span>sp<span class="ope">, </span>area</span></span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter sides of a triangle:- "</span>);
+                        <span class="space_1 fun">scanf</span>( <span class="str">"%f %f %f"</span>, &<span class="var">a</span>, &<span class="var">b</span>, &<span class="var">c</span>);
                         <span class="space_1 c_comment">//Calculating area of the triangle</span>
-                        <span class="space_1 var">area</span> = <span class="var">0.5</span>*<span class="var">height</span>*<span class="var">base</span>;
-                        <span class="space_1 fun">printf</span>(<span class="str">"Area of the triangle = %f"</span>, <span class="var">area</span>);
+                        <span class="space_1 var">sp</span> = (<span class="var">a</span> + <span class="var">b</span> + <span class="var">c</span>) / <span class="var">2</span>;
+                        <span class="space_1 var">area</span> = <span class="fun">sqrt</span>(<span class="var">sp</span>*(<span class="var">sp<span class="ope">-</span><span class="var">a</span><span class="ope">)*(<span class="var">sp<span class="ope">-</span><span class="var">b</span><span class="ope">)*(<span class="var">sp<span class="ope">-</span><span class="var">c</span><span class="ope">))</span></span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"The area of triangle =  %f"</span>, <span class="var">area</span>);
                         <span class="return">return</span> <span>0</span>;
                         }
                     </code>
                 </pre>
             <h3 class="code_h">Output</h3>
             <pre class="c_code">
-                    <samp>Enter the height and base of the triangle:- 3
+                    <samp>Enter sides of a triangle:- 4
                         5
-                        Area of the triangle = 7.500000</samp>
+                        6
+                        The area of triangle = 9.921567</samp>
                 </pre>
         </div>
         <footer>
