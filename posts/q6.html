@@ -24,30 +24,45 @@
 
             <h2 class="problem">Problem:- </h2>
             <div class="question">
-                <h1 class="que">Write a program in C to print "hello world!".</h1>
+                <h1 class="que">Write a program in C to find average of five numbers given by the user.</h1>
             </div>
             <div class="pre_k">
                 <p>To understand this program, you should be familiar with the following C programming topics:</p>
                 <ul>
                     <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
                 </ul>
             </div>
 
-            <h3 class="code_h">The program to print "Hello World!".</h3>
+            <h3 class="code_h">The program to find average of five numbers given by the user.</h3>
 
             <pre class="c_code">
-                    <code>
-                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
-                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
-                        <span class="space_1 c_comment">// printf() displays the string inside quotation</span>
-                        <span class="space_1 fun">printf</span>(<span class="str">"Hello, World!"</span>);
-                        <span class="return">return</span> <span>0</span>;
-                        }
-                    </code>
-                </pre>
+                <code class=""><span class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                    <span class=""><span class="data_t">int</span> <span class="fun">main</span><span class="">()</span> </span>{    
+                    
+                        <span class="space_1 fun">int</span> <span class="var">num1<span class="ope">,</span> num2<span class="ope">,</span> num3<span class="ope">,</span> num4<span class="ope">,</span> num5<span class="ope">;
+                        <span class="space_1 fun">float</span> <span class="var">average</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter five integers: "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%d %d %d %d %d"</span>, <span class="var"> <span class="ope">&amp;</span>num1<span class="ope">,</span> <span class="ope">&amp;</span>num2<span class="ope">,</span><span class="ope"> &amp;</span>num3<span class="ope">,</span> <span class="ope">&amp;</span>num4<span class="ope">,</span> <span class="ope">&amp;</span>num5</span>);
+                    
+                        <span class="space_1 c_comment">// Calculating average of five numbers</span>
+                        <span class="space_1 var">average <span class="ope">=</span> <span class="ope">(</span>num1 <span class="ope">+</span> num2 <span class="ope">+</span> num3 <span class="ope">+</span> num4 <span class="ope">+</span> num5</span>) / <span class="var">5</span>;   
+                        
+                        <span class="space_1 fun">printf</span>(<span class="str">"Average of given five numbers = %f"</span>, <span class="var">average</span>);
+                        <span class="return">return</span> <span class="">0</span>;
+                    }
+                </code>
+            </pre>
             <h3 class="code_h">Output</h3>
             <pre class="c_code">
-                    <samp>Hello World!</samp>
+                    <samp>Enter five integers: 4
+                        5
+                        6
+                        7
+                        8
+                        Average of given five numbers = 6.000000</samp>
                 </pre>
         </div>
         <footer>
