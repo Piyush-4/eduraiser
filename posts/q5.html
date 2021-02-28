@@ -54,15 +54,13 @@
                 <code class=""><span class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
                     <span class=""><span class="data_t">int</span> <span class="fun">main</span><span class="">()</span> </span>{    
                     
-                        <span class="space_1 fun">int</span> <span class="var">number1<span class="ope">,</span> number2<span class="ope">,</span> divide</span>;
-                        
+                        <span class="space_1 fun">int</span> <span class="var">number1<span class="ope">,</span> number2</span>;
+                        <span class="space_1 data_t">float</span> <span class="var">divide</span>;
                         <span class="space_1 fun">printf</span>(<span class="str">"Enter two integers: "</span>);
                         <span class="space_1 fun">scanf</span>(<span class="str">"%d %d"</span>, <span class="var"> <span class="ope">&amp;</span>number1<span class="ope">,</span> <span class="ope">&amp;</span>number2</span>);
-                    
                         <span class="space_1 c_comment">// Dividing two integers</span>
                         <span class="space_1 var">divide <span class="ope">=</span> number1 <span class="ope">/</span> number2</span>;  
-                        
-                        <span class="space_1 fun">printf</span>(<span class="str">"%d / %d = %d"</span>, <span class="var">number1<span class="ope">, </span>number2<span class="ope">,</span> divide</span> );
+                        <span class="space_1 fun">printf</span>(<span class="str">"%d / %d = %f"</span>, <span class="var">number1<span class="ope">, </span>number2<span class="ope">,</span> divide</span> );
                         <span class="return">return</span> <span class="">0</span>;
                     }
                 </code>
