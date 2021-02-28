@@ -174,7 +174,7 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     background: rgb(0, 0, 0);
-    color: rgb(240, 232, 231);
+    color: rgba(240, 232, 231, 0.555);
     padding: 1rem 0;
     opacity: 0.9;
     width: 100%;
