@@ -69,11 +69,17 @@ code, samp, .ope{
 .space_1{
     margin-left: 2rem;
 }
+.space_2{
+    margin-left: 4rem;;
+}
 .c_comment{
     color: rgba(255, 235, 205, 0.72);
 }
 .var{
     color: rgb(72, 199, 221);
+}
+.con{
+    color: rgb(255, 0, 255);
 }
 @media only screen and (max-width: 600px) {
     .post{
