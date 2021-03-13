@@ -11,28 +11,29 @@
 }
 
 .question{
-    margin-left:10rem;
+    margin-left:6rem;
 }
 .que{
     color: rgba(27, 27, 27, 0.837);
     font-family: 'Caveat', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .problem{
     color: rgba(0, 0, 0, 0.775);
     font-family: 'Akaya Telivigala', cursive;
     letter-spacing: 0.0625rem;
     float: left;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .pre_k {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 5rem 0 2rem 1.8rem;
 }
 ul{
     margin: 0.5rem 0 0.5rem 2rem;
 }
 .code_h{
+    color: rgb(46, 42, 42);
     font-family: 'Caveat', cursive;
     font-size: 2rem;
     margin: 0 0 0 1.8rem;
@@ -72,6 +73,9 @@ code, samp, .ope{
 .space_2{
     margin-left: 4rem;;
 }
+.space_3{
+    margin-left: 6rem;
+}
 .c_comment{
     color: rgba(255, 235, 205, 0.72);
 }
@@ -89,10 +93,10 @@ code, samp, .ope{
         padding: 0.3rem;
     }
     .problem{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .que{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .question{
         margin-left: 0;

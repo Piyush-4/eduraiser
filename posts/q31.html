@@ -1,0 +1,75 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Porgram to check that an entered character is an alphabet, digit or special symbol</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">Write a program in C to check that an entered character is an alphabet, digit or special
+                    symbol.</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                    <li>C Conditional</li>
+                    <li>C Logical operator</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The program to check that an entered character is an alphabet, digit or special symbol.
+            </h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
+                        <span class="space_1 data_t">char <span class="var">ch</span></span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter a character:- "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%c"</span>, &<span class="var">ch</span>);
+                        <span class="space_1 c_comment">//Checking that an entered character is an alphabet, digit or special symbol</span>
+                        <span class="space_1 con">if</span> (<span class="var">ch</span> >= <span class="var">65</span> && <span class="var">ch</span> &lt;= <span class="var">90</span> || <span class="var">ch</span> >= <span class="var">97</span> && <span class="var">ch</span> &lt;= <span class="var">122</span>) 
+                        <span class="space_2 fun">printf</span>(<span class="str">"The entered character is an Alphabet"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">ch</span> >= <span class="var">48</span> && <span class="var">ch</span> &lt;= <span class="var">57</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"The entered character is a digit"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">ch</span> >= <span class="var">0</span> && <span class="var">ch</span> &lt;= <span class="var">47</span> || <span class="var">ch</span> >= <span class="var">58</span> && <span class="var">ch</span> &lt;= <span class="var">64</span> || <span class="var">ch</span> >= <span class="var">91</span> && <span class="var">ch</span> &lt;= <span class="var">96</span> || <span class="var">ch</span> >= <span class="var">123</span> && <span class="var">ch</span> &lt;= <span class="var">126</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"The entered character is a special symbol"</span>);
+                        <span class="return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter a character:- e
+                        The entered character is an Alphabet</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

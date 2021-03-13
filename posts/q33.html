@@ -1,0 +1,87 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Program to find area and perimeter of rectangle and area and circumference of circle</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">The length and breadth of a rectangle and radius of a circle are input through the
+                    keyboard.
+                    Write a program to calculate the area and perimeter of the rectangle, and the area and
+                    circumference of the circle.</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The program to find area and perimeter of a rectangle and area and circumference of a
+                circle</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span  class="inc">#<span>define</span> <span class="h_file">PI</span> <span class="var">3.14285</span> </span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
+                        <span class="space_1 data_t">float</span> <span class="var">l</span>, <span class="var">b</span>, <span class="var">rad</span>, <span class="var">aor</span>, <span class="var">per</span>, <span class="var">aoc</span>, <span class="var">cir</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the length and breadth of the rectangle:- "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%f %f"</span>, &<span class="var">l</span>, &<span class="var">b</span>);
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nEnter the Radius of the circle:- "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%f"</span>, &<span class="var">rad</span>);
+                        <span class="space_1 c_comment">//Finding area and perimeter of the rectangle and area and circumference of the circle</span>
+                        <span class="space_1 var">aor</span> = <span class="var">l</span> * <span class="var">b</span>;
+                        <span class="space_1 var">per</span> = <span class="var">2</span> * (<span class="var">l</span> + <span class="var">b</span>);
+                        <span class="space_1 var">aoc</span> = <span class="var">PI</span> * <span class="var">rad</span> * <span class="var">rad</span>;
+                        <span class="space_1 var">cir</span> = <span class="var">2</span> * <span class="var">PI</span> * <span class="var">rad</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nArea of the Rectangle is:- %f"</span>, <span class="var">aor</span>);
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nPerimeter of the Rectangle is:- %f"</span>, <span class="var">per</span>);
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nArea of the circle is:- %f"</span>, <span class="var">aoc</span>);
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nCircumference of the circle is:- %f"</span>, <span class="var">cir</span>);
+                        <span class="return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter the length and breadth of the rectangle:- 4
+                        7
+                        
+                        Enter the Radius of the circle:- 5
+                        
+                        Area of the Rectangle is:- 28.000000
+                        Perimeter of the Rectangle is:- 22.000000
+                        Area of the circle is:- 78.571251
+                        Circumference of the circle is:- 31.428499</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

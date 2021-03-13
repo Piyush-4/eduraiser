@@ -1,0 +1,81 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Porgram to check that a given year is leap year or not</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">Write a program in C to check that a given year is leap year or not.</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                    <li>C Conditional</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The program to check that a given year is leap year or not</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
+                        <span class="space_1 data_t">int <span class="var">yr</span></span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nEnter a year: "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%d"</span>, &<span class="var">yr</span>);
+                        <span class="space_1 c_comment">//Checking that a given year is leap year or not</span>
+                        <span class="space_1 con">if</span> (<span class="var">yr</span> % <span class="var">100</span> == <span class="var">0</span>) 
+                        <span class="space_2">{</span>
+                        <span class="space_2 con">if</span> (<span class="var">yr</span> % <span class="var">400</span> == <span class="var">0</span>)
+                        <span class="space_3 fun">printf</span>(<span class="str">"Leap year\n"</span>);
+                        <span class="space_2 con">else</span>
+                        <span class="space_3 fun">printf</span>(<span class="str">"Not a Leap year\n"</span>);
+                        <span class="space_2">}</span>
+                        <span class="space_1 con">else</span>
+                        <span class="space_2">{</span>
+                        <span class="space_2 con">if</span> (<span class="var">yr</span> % <span class="var">4</span> == <span class="var">0</span>)
+                        <span class="space_3 fun">printf</span>(<span class="str">"Leap year\n"</span>);
+                        <span class="space_2 con">else</span>
+                        <span class="space_3 fun">printf</span>(<span class="str">"Not a leap year\n"</span>);
+                        <span class="space_2">}</span>
+                        <span class="return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>
+                        Enter a year: 2021
+                        Not a leap year</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

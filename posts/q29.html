@@ -1,0 +1,95 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Porgram to find the total marks, average marks and C.G.P.A</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">Write a program in C to find the total marks, average marks and C.G.P.A of a student
+                    using
+                    else if ladder. The marks obtained in five subjects will be entered through the keyboard.
+                </h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                    <li>C Conditional</li>
+                    <li>C Logical operator</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The program to find total marks, average marks and C.G.P.A of a student</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>{
+                        <span class="space_1 data_t">int <span class="var">s1<span class="ope">, </span>s2<span class="ope">,</span> s3<span class="ope">,</span> s4<span class="ope">,</span> s5<span class="ope">,</span> total</span></span>;
+                        <span class="space_1 data_t">float</span> <span class="var">avg</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter marks obtained in five subjects:- "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%d %d %d %d %d"</span>, &<span class="var">s1</span>, &<span class="var">s2</span>, &<span class="var">s3</span>, &<span class="var">s4</span>, &<span class="var">s5</span>);
+                        <span class="space_1 c_comment">//Finding total marks, average marks and C.G.P.A of the student</span>
+                        <span class="space_1 var">total</span> = <span class="var">s1</span> + <span class="var">s2</span> + <span class="var">s3</span> + <span class="var">s4</span> + <span class="var">s5</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Total marks = %d\n"</span>, <span class="var">total</span>);
+                        <span class="space_1 var">avg</span> = <span class="var">total</span> / <span class="var">5.0</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Average marks = %f\n"</span>, <span class="var">avg</span>);
+                        <span class="space_1 con">if</span> (<span class="var">avg</span> >= <span class="var">90</span>) 
+                        <span class="space_2 fun">printf</span>(<span class="str">"C.G.P.A = 10"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">avg</span> >= <span class="var">80</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"C.G.P.A = 9"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">avg</span> >= <span class="var">70</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"C.G.P.A = 8"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">avg</span> >= <span class="var">60</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"C.G.P.A = 7"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">avg</span> >= <span class="var">50</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"C.G.P.A = 6"</span>);
+                        <span class="space_1 con">else if</span> (<span class="var">avg</span> >= <span class="var">40</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"C.G.P.A = 5"</span>);
+                        <span class="space_1 con">else</span>
+                        <span class="space_2 fun">printf</span>(<span class="str">"fail"</span>);
+                        <span class="return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter marks obtained in five subjects:- 45
+                        67
+                        87
+                        56
+                        79
+                        Total marks = 334
+                        Average marks = 66.800003
+                        C.G.P.A = 7</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>
