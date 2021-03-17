@@ -1,0 +1,2 @@
+User-agebt: *
+Crawl-Delay: 20
