@@ -1,0 +1,79 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Program to convert cartesian co-ordinates into polar co-ordinates</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">Write a program to receive Cartesian co-ordinates(x, y) of a point and convert
+                    them
+                    into
+                    polar co-ordinates (r, θ). <br>
+                    Hint: r = sqrt (x<sup>2</sup> + y<sup>2</sup>) and θ = tan<sup>-1</sup> (y/x).
+                </h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The program to convert cartesian co-ordinates into polar co-ordinates</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;math.h&gt;</span></span>
+                        <span  class="inc">#<span>define</span> <span class="h_file">PI</span> <span class="var">3.14285</span> </span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>
+                        {
+                        <span class="space_1 data_t">float</span> <span class="var">r</span>, <span class="var">x</span>, <span class="var">y</span>, <span class="var">theeta</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the Cartesian co-ordinates (x co-ordinate first followed by y co-ordinate)\n"</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%f %f"</span>, &<span class="var">x</span>, &<span class="var">y</span>);
+                        <span class="space_1 c_comment">//Converting cartesian co-ordinates into polar co-ordinates</span>
+                        <span class="space_1 var">r</span> = <span class="fun">sqrt</span>(<span class="var">x</span> * <span class="var">x</span> + <span class="var">y</span> * <span class="var">y</span>);
+                        <span class="space_1 var">theeta</span> = <span class="fun">atan</span>(<span class="var">y</span>/<span class="var">x</span>);
+                        <span class="space_1 var">theeta</span> = <span class="var">theeta</span> * (<span class="var">180.0</span>/<span class="var">PI</span>);
+                        <span class="space_1 fun">printf</span>(<span class="str">"The polar co-ordinate is (%f, %f)"</span>, <span class="var">r</span>, <span class="var">theeta</span>);
+                        <span class="space_1 return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter the Cartesian co-ordinates (x co-ordinate first followed by y co-ordinate)
+                        4
+                        6
+                       The polar co-ordinate is (7.211102, 56.287407)</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

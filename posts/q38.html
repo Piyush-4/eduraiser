@@ -1,0 +1,83 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Program to print Trigonometric Ratios</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">If value of an angle is input through the keyboard, write a program to print all its
+                    Trigonometric ratios.</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The Program to print Trigonometric Ratios</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;conio.h&gt;</span></span>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;math.h&gt;</span></span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>
+                        {
+                        <span class="space_1 data_t">float</span> <span class="var">ang</span>, <span class="var">sin_f</span>, <span class="var">cos_f</span>, <span class="var">tan_f</span>, <span class="var">cosec_f</span>, <span class="var">sec_f</span>, <span class="var">cot_f</span>;
+                        <span class="space_1 data_t">const float</span> <span class="var">PI</span> = <span class="var">3.141592</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"Enter the angle:- "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%f"</span>, &<span class="var">ang</span>);
+                        <span class="space_1 var">sin_f</span> = <span class="var">sin</span>(<span class="var">ang</span>*<span class="var">PI</span>/<span class="var">180</span>);
+                        <span class="space_1 var">cos_f</span> = <span class="var">cos</span>(<span class="var">ang</span>*<span class="var">PI</span>/<span class="var">180</span>);
+                        <span class="space_1 var">tan_f</span> = <span class="var">tan</span>(<span class="var">ang</span>*<span class="var">PI</span>/<span class="var">180</span>);
+                        <span class="space_1 var">cosec_f</span> = <span class="var">1</span>/<span class="var">sin_f</span>;
+                        <span class="space_1 var">sec_f</span> = <span class="var">1</span>/<span class="var">cos_f</span>;
+                        <span class="space_1 var">cot_f</span> = <span class="var">1</span>/<span class="var">tan_f</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"The Trigonometric ratios are:-\n sin%f = %f\n cos%f = %f\n tan%f = %f\n cosec%f = %f\n sec%f = %f\n cot%f = %f"</span>, <span class="var">ang</span>, <span class="var">sin_f</span>, <span class="var">ang</span>, <span class="var">cos_f</span>, <span class="var">ang</span>, <span class="var">tan_f</span>, <span class="var">ang</span>, <span class="var">cosec_f</span>, <span class="var">ang</span>, <span class="var">sec_f</span>, <span class="var">ang</span>, <span class="var">cot_f</span>);
+                        <span class="space_1 fun">getch</span>();
+                        <span class="space_1 return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter the angle:- 60
+                        The Trigonometric ratios are:-
+                         sin60.000000 = 0.866025      
+                         cos60.000000 = 0.500000      
+                         tan60.000000 = 1.732050      
+                         cosec60.000000 = 1.154701
+                         sec60.000000 = 1.999999
+                         cot60.000000 = 0.577351</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

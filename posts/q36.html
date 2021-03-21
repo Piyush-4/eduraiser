@@ -1,0 +1,86 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Program to print out all the Armstrong numbers between 1 and 500</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">Write a program to print out all Armstrong numbers between 1 and 500. If sum of cubes of
+                    each
+                    digit of the number is equal to the number itself, then the number is called an Armstrong
+                    number. For example, 153 = (1 * 1 * 1) + (5 * 5 * 5) + (3 * 3 * 3)</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                    <li>C Conditional</li>
+                    <li>C Looping</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The Program to print out all the Armstrong numbers between 1 and 500</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                       <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>
+                        {
+                        <span class="space_1 data_t">int</span> <span class="var">count</span>=<span class="var">1</span>, <span class="var">r</span>, <span class="var">num</span>, <span class="var">sum</span>;
+                        <span class="space_1 c_comment">//finding Armstrong numbers between 1 and 500</span>
+                        <span class="space_1 con">while</span> (<span class="var">count</span> &lt;= <span class="var">500</span>)
+                        <span class="space_1">{</span>
+                        <span class="space_2 var">num</span> = <span class="var">count</span>;
+                        <span class="space_2 var">sum</span> = <span class="var">0</span>;
+                        <span class="space_2 con">while</span> (<span class="var">num</span> != <span class="var">0</span>)
+                        <span class="space_2">{</span>
+                        <span class="space_3 var">r</span> = <span class="var">num</span> % <span class="var">10</span>;
+                        <span class="space_3 var">sum</span> = <span class="var">sum</span> + (<span class="var">r</span> * <span class="var">r</span> * <span class="var">r</span>);
+                        <span class="space_3 var">num</span> = <span class="var">num</span> / <span class="var">10</span>;
+                        <span class="space_2">}</span>
+                        <span class="space_2 con">if</span> (<span class="var">count</span> == <span class="var">sum</span>)
+                        <span class="space_3 fun">printf</span>(<span class="str">"%d is an Armstrong Number\n"</span>, <span class="var">count</span>);
+                        <span class="space_2 var">count</span>++;
+                        <span class="space_1">}</span>
+                        <span class="space_1 return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>1 is an Armstrong Number
+                        153 is an Armstrong Number
+                        370 is an Armstrong Number
+                        371 is an Armstrong Number
+                        407 is an Armstrong Number</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

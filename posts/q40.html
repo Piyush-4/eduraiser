@@ -1,0 +1,92 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Program to obtain the reversed number of a five-digit number and to determine whether the original and
+            reversed numbers are equal or not</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">A five-digit number is entered through the keyboard. Write a program to obtain the
+                    reversed
+                    number and to determine whether the original and reversed numbers are equal or not.</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                    <li>C Conditional</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The Program to obtain the reversed number of a five-digit number</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;conio.h&gt;</span></span>
+                        <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>
+                        {
+                        <span class="space_1 data_t">int</span> <span class="var">d1</span>, <span class="var">d2</span>, <span class="var">d3</span>, <span class="var">d4</span>, <span class="var">d5</span>;
+                        <span class="space_1 data_t">long int</span> <span class="var">n</span>, <span class="var">num1</span>, <span class="var">num2</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nEnter a five-digit integer Number:- "</span>);
+                        <span class="space_1 fun">scanf</span>(<span class="str">"%ld"</span>, &<span class="var">num1</span>);
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nThe entered five-digit number is:- %ld"</span>, <span class="var">num1</span>);
+                        <span class="space_1 var">n</span> = <span class="var">num1</span>;
+                        <span class="space_1 var">d5</span> = <span class="var">num1</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num1</span> = <span class="var">num1</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d4</span> = <span class="var">num1</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num1</span> = <span class="var">num1</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d3</span> = <span class="var">num1</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num1</span> = <span class="var">num1</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d2</span> = <span class="var">num1</span> % <span class="var">10</span>;
+                        <span class="space_1 var">num1</span> = <span class="var">num1</span> / <span class="var">10</span>;
+                        <span class="space_1 var">d1</span> = <span class="var">num1</span>;
+                        <span class="space_1 var">num2</span> = <span class="var">d5</span> * <span class="var">10000</span> + <span class="var">d4</span> * <span class="var">1000</span> + <span class="var">d3</span> * <span class="var">100</span> + <span class="var">d2</span> * <span class="var">10</span> + <span class="var">d1</span>;
+                        <span class="space_1 fun">printf</span>(<span class="str">"\nThe reversed five-digit number is :- %ld"</span>, <span class="var">num2</span>);
+                        <span class="space_1 con">if</span> (<span class="var">n</span> == <span class="var">num2</span>)
+                        <span class="space_2 fun">printf</span>(<span class="str">"\nThe original and reversed numbers are equal"</span>);
+                        <span class="space_1 con">else</span>
+                        <span class="space_2 fun">printf</span>(<span class="str">"\nThe original and reversed numbers are not equal"</span>);
+                        <span class="space_1 fun">getch</span>();
+                        <span class="space_1 return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter a five-digit integer Number:- 54326
+
+                        The entered five-digit number is:- 54326
+                        The reversed five-digit number is :- 62345
+                        The original and reversed numbers are not equal</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>

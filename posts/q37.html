@@ -1,0 +1,115 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Caveat:wght@600&family=Ubuntu+Condensed&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f0cdacb0a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/posts.css">
+        <title>Program to count positive, negative and zero numbers</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="brand" href="../index.html">Eduraiser!</a>
+            <a class="contact" href=""><i class="fas fa-address-book fa-xs"></i></a>
+        </div>
+        <div class="post">
+
+            <h2 class="problem">Problem:- </h2>
+            <div class="question">
+                <h1 class="que">Write a program to enter numbers till the user wants. At the end it should display the
+                    count
+                    of positive, negative and zeros entered.</h1>
+            </div>
+            <div class="pre_k">
+                <p>To understand this program, you should be familiar with the following C programming topics:</p>
+                <ul>
+                    <li>C Input Output (I/O)</li>
+                    <li>C Data Types</li>
+                    <li>C Variables, Constants and Literals</li>
+                    <li>C Operators</li>
+                    <li>C Conditional</li>
+                    <li>C Looping</li>
+                </ul>
+            </div>
+
+            <h3 class="code_h">The Program to count positive, negative and zeros Entered</h3>
+
+            <pre class="c_code">
+                    <code>
+                        <span  class="inc">#<span>include</span> <span class="h_file">&lt;stdio.h&gt;</span></span>
+                       <span><span class="data_t">int</span> <span class="fun">main</span><span >()</span> </span>
+                        {
+                        <span class="space_1 data_t">int</span> <span class="var">p</span>=<span class="var">0</span>, <span class="var">n</span>=<span class="var">0</span>, <span class="var">z</span>=<span class="var">0</span>, <span class="var">num</span>, <span class="var">count</span>=<span class="var">1</span>;
+                        <span class="space_1 con">while</span> (<span class="var">count</span> == <span class="var">1</span>)
+                        <span class="space_1">{</span>
+                        <span class="space_2 fun">printf</span>(<span class="str">"Enter the Number you want:-\n"</span>);
+                        <span class="space_2 fun">scanf</span>(<span class="str">"%d"</span>, &<span class="var">num</span>);
+                        <span class="space_2 con">if</span> (<span class="var">num</span> > <span class="var">0</span>)
+                        <span class="space_3 var">p</span>++;
+                        <span class="space_2 con">else if</span> (<span class="var">num</span> == <span class="var">0</span>)
+                        <span class="space_3 var">z</span>++;
+                        <span class="space_2 con">else if</span> (<span class="var">num</span> &lt; <span class="var">0</span>)
+                        <span class="space_3 var">n</span>++;
+                        <span class="space_2 con">else</span>
+                        <span class="space_3 fun">printf</span>(<span class="str">"Wrong Entry"</span>);
+                        <span class="space_2 fun">printf</span>(<span class="str">"Do you want to continue:- \nEnter 1 for yes or 0 for No\n"</span>);
+                        <span class="space_2 fun">scanf</span>(<span class="str">"%d"</span>, &<span class="var">count</span>);
+                        <span class="space_1">}</span>
+                        <span class="space_1 fun">printf</span>(<span class="str">"Count of:-\nPositive Numbers = %d\nNegative Numbers = %d\nZeros = %d"</span>, <span class="var">p</span>, <span class="var">n</span>, <span class="var">z</span>);
+                        <span class="space_1 return">return</span> <span>0</span>;
+                        }
+                    </code>
+                </pre>
+            <h3 class="code_h">Output</h3>
+            <pre class="c_code">
+                    <samp>Enter the Number you want:-
+                        5
+                        Do you want to continue:-  
+                        Enter 1 for yes or 0 for No
+                        1
+                        Enter the Number you want:-
+                        -6
+                        Do you want to continue:- 
+                        Enter 1 for yes or 0 for No
+                        1
+                        Enter the Number you want:-
+                        0
+                        Do you want to continue:- 
+                        Enter 1 for yes or 0 for No
+                        1
+                        Enter the Number you want:-
+                        45
+                        Do you want to continue:- 
+                        Enter 1 for yes or 0 for No
+                        1
+                        Enter the Number you want:-
+                        -32
+                        Do you want to continue:- 
+                        Enter 1 for yes or 0 for No
+                        1
+                        Enter the Number you want:-
+                        0
+                        Do you want to continue:- 
+                        Enter 1 for yes or 0 for No
+                        0
+                        Count of:-
+                        Positive Numbers = 2
+                        Negative Numbers = 2
+                        Zeros = 2</samp>
+                </pre>
+        </div>
+        <footer>
+            <p>&#169; 2021 All Rights Reserved!</p>
+            <p>Designed and developed with <span class="heart">❤</span> by Piyush!</p>
+        </footer>
+    </body>
+
+    </html>
